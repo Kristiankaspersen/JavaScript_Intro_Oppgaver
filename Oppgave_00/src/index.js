@@ -78,4 +78,13 @@ inputName.addEventListener("keyup", () => {
   Bruk denne til å gi li-elementer border med farge
 </button> */
 
+const ulChildren = document.getElementsByClassName("children"); 
+const colorBtn = document.getElementById("color"); 
+
+colorBtn.addEventListener("click", () => {
+    ulChildren.style.border = "thick solid red"; 
+})
+
+
+
 
