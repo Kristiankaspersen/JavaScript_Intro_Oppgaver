@@ -82,7 +82,9 @@ const ulChildren = document.getElementsByClassName("children");
 const colorBtn = document.getElementById("color"); 
 
 colorBtn.addEventListener("click", () => {
-    ulChildren.style.border = "thick solid red"; 
+    console.log(ulChildren)
+    console.log(ulChildren[0].children[0].style.border = "5px solid red")
+    console.log(ulChildren)
 })
 
 
