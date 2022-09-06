@@ -40,29 +40,15 @@ const createBtn = document.getElementById("create");
 createBtn.addEventListener("click", () => div.innerHTML += `<${select.value}>${text.value}</${select.value}>` ) 
 
 // Oppgave 6
-{/* <ul id="list">
-        <li>Element 1</li>
-        <li>Element 2</li>
-        <li>Element 3</li>
-        <li>Element 4</li>
-      </ul>
-      <button id="remove-li">Bruk denne til å fjerne li</button> */}
 
 const list = document.getElementById("list"); 
 const removeLi = document.getElementById("remove-li"); 
-console.log(list.childNodes)
 
 removeLi.addEventListener("click", () => {
-
+    list.removeChild(list.firstElementChild);
 });
 
 // Oppgave 7
-{/* <h3>Oppgave 7</h3>
-<input type="text" id="name" placeholder="Navn her" />
-<button id="order">
-  Gjør denne disablet eller gi en rød border hvis mer enn 4 bokstaver
-</button> */}
-
 const inputName = document.getElementById("name");
 const order = document.getElementById("order"); 
 const disabledAttr = document.createAttribute("disabled")
@@ -80,7 +66,7 @@ inputName.addEventListener("keyup", () => {
 
 
 // Oppgave 8
-{/* <h3>Oppgave 8</h3>
+/* <h3>Oppgave 8</h3>
 <ul class="children">
   <li>List one</li>
   <li>List two</li>
@@ -90,6 +76,6 @@ inputName.addEventListener("keyup", () => {
 </ul>
 <button id="color">
   Bruk denne til å gi li-elementer border med farge
-</button> */}
+</button> */
 
 
